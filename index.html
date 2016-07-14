@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="stage">
+  <div class="screen">
+    <div class="screen__inner">
+      <svg class="step-overlay"></svg>
+      <div class="step step--one show">
+        <div class="step__header">
+          <svg class="step__header--logo" width="97px" height="96px" viewBox="0 0 97 96">
+            <g id="logo-wrap" stroke="none" stroke-width="2" fill="none">
+              <g id="logo" transform="translate(-4, -3)" stroke="#FFFFFF">
+                <path id="i-c" d="M27.2449185,89.4231385 C34.7832091,94.8221272 44.0204885,98 54,98 C79.4050985,98 100,77.4050985 100,52 C100,42.1125641 96.8804977,32.953727 91.5720112,25.4540069 M85.4679038,18.4472869 C77.2402755,10.7278123 66.1722576,6 54,6 C28.5949015,6 8,26.5949015 8,52 C8,64.3307167 12.8517073,75.5282565 20.7502817,83.787779"></path>
+                <path id="i-s" d="M2.83597202,41.343686 C-5.78424573,43.4043486 -10.9472221,46.0279821 -10.9472221,48.8847764 C-10.9472221,54.2114318 7.00223775,58.7274867 31.844129,60.2950243 M77.2726979,59.77005 C98.4777839,57.8617896 113.17767,53.7052076 113.17767,48.8847764 C113.17767,46.3120579 108.99044,43.9284353 101.861791,41.9747904" transform="translate(51.115224, 50.819355) rotate(-45.000000) translate(-51.115224, -50.819355) "></path>
+                <circle id="i-p-i" cx="54" cy="45" r="12"></circle>
+                <path id="i-p" d="M54,78 C54,78 72,54.9411255 72,45 C72,35.0588745 63.9411255,27 54,27 C44.0588745,27 36,35.0588745 36,45 C36,54.9411255 54,78 54,78 L54,78 Z"></path>
+              </g>
+            </g>
+          </svg>
+          <h1 class="step__header--title">Finder</h1>
+          <div class="step__header--desc">Easiest way to find<br> your things</div>
+        </div>
+      <div class="step__footer">
+          <div class="btn btn-db">
+            <span class="btn-db__side">Sign In</span>
+            <span class="btn-db__side">Sign Up</span>
+          </div>
+        </div>
+      </div>
+      <div class="step step--two">
+        <div class="step__header">
+          <svg class="step__header--logo" width="97px" height="96px" viewBox="0 0 97 96">
+            <g id="logo-wrap" stroke="none" stroke-width="2" fill="none">
+              <g id="logo" transform="translate(-4, -3)" stroke="#FFFFFF">
+                <path id="i-c" d="M27.2449185,89.4231385 C34.7832091,94.8221272 44.0204885,98 54,98 C79.4050985,98 100,77.4050985 100,52 C100,42.1125641 96.8804977,32.953727 91.5720112,25.4540069 M85.4679038,18.4472869 C77.2402755,10.7278123 66.1722576,6 54,6 C28.5949015,6 8,26.5949015 8,52 C8,64.3307167 12.8517073,75.5282565 20.7502817,83.787779"></path>
+                <path id="i-s" d="M2.83597202,41.343686 C-5.78424573,43.4043486 -10.9472221,46.0279821 -10.9472221,48.8847764 C-10.9472221,54.2114318 7.00223775,58.7274867 31.844129,60.2950243 M77.2726979,59.77005 C98.4777839,57.8617896 113.17767,53.7052076 113.17767,48.8847764 C113.17767,46.3120579 108.99044,43.9284353 101.861791,41.9747904" transform="translate(51.115224, 50.819355) rotate(-45.000000) translate(-51.115224, -50.819355) "></path>
+                <circle id="i-p-i" cx="54" cy="45" r="12"></circle>
+                <path id="i-p" d="M54,78 C54,78 72,54.9411255 72,45 C72,35.0588745 63.9411255,27 54,27 C44.0588745,27 36,35.0588745 36,45 C36,54.9411255 54,78 54,78 L54,78 Z"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="step__form">
+          <span class="input">
+            <input id="login[1]" type="email" class="input__field" />
+            <label class="input__label" for="login[1]">Login or Email</label>
+          </span>
+          <span class="input">
+            <input id="login[2]" type="password" class="input__field" />
+            <label class="input__label" for="login[2]">Password</label>
+          </span>
+          <p class="step__form-fp">
+            <a href="#">Forgot your password?</a>
+          </p>
+        </div>
+        <div class="step__footer">
+          <div class="btn btn-single">
+            <span class="btn-single__inner">Sign In</span>
+          </div>
+          <ul class="nav">
+            <li class="nav__item"><a href="#">Sign In with social</a></li>
+            <li class="nav__item"><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js'></script>
+<script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=11'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

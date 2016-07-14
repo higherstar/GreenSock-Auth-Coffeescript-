@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  line-height: 1.4;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.stage {
+  -webkit-transform-origin: center center;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 2rem;
+  background-image: -webkit-linear-gradient(315deg, #5E1F68 0%, #2A1E73 100%);
+  background-image: linear-gradient(135deg, #5E1F68 0%, #2A1E73 100%);
+  position: relative;
+}
+
+.screen {
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 0px 2px 72px 0px rgba(0, 0, 0, 0.14), 0px 55px 44px -42px rgba(18, 20, 39, 0.6);
+}
+.screen__inner {
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-transform: translate3d(0px, 0px, 40px);
+  width: 320px;
+  height: 568px;
+}
+
+.step-overlay {
+  z-index: 20;
+  border-radius: 12px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.step {
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  height: 100%;
+}
+.step.show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.step--one {
+  background-image: -webkit-linear-gradient(315deg, #5AFFFB 0%, #644EFF 100%);
+  background-image: linear-gradient(135deg, #5AFFFB 0%, #644EFF 100%);
+}
+.step--two {
+  display: none;
+  background-image: -webkit-linear-gradient(315deg, #FFDA77 0%, #FF4EE3 100%);
+  background-image: linear-gradient(135deg, #FFDA77 0%, #FF4EE3 100%);
+}
+.step__header {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.step__header--logo {
+  width: 97px;
+  height: 96px;
+  margin-bottom: 2rem;
+}
+.step__header--title {
+  font-size: 1.8rem;
+  font-style: italic;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.step__header--desc {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.step__form {
+  margin-bottom: 40px;
+}
+.step__form .input {
+  margin-bottom: 20px;
+}
+.step__form .input:nth-child(2) {
+  margin-bottom: 10px;
+}
+.step__form-fp {
+  text-align: right;
+}
+.step__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
+}
+
+.nav {
+  margin-top: 40px;
+  text-align: center;
+}
+.nav__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 1;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.58);
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-db__side {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.37) 100%);
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.37) 100%);
+  padding: 13px 20px;
+  text-align: center;
+  width: 50%;
+}
+.btn-db__side:first-child {
+  border-right: 2px solid rgba(255, 255, 255, 0.58);
+}
+.btn-db__side:hover {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.33) 100%);
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.33) 100%);
+}
+
+.btn-single {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.37) 100%);
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.37) 100%);
+}
+.btn-single__inner {
+  width: 100%;
+  padding: 13px 20px;
+  text-align: center;
+}
+.btn-single:hover {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.33) 100%);
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.33) 100%);
+}
+
+.input {
+  display: block;
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.58);
+}
+.input.float-label .input__label {
+  opacity: 0.8;
+  top: -8px;
+  left: 0;
+}
+.input__label {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+.input__field {
+  color: #fff;
+  outline: 0;
+  background-color: transparent;
+  font-size: 1.4rem;
+  padding: 0 0;
+  border: none;
+  height: 42px;
+  width: 100%;
+  padding-top: 5px;
+}
+.input__field:focus + label {
+  top: -8px;
+  left: 0;
+  opacity: 0.8;
+}

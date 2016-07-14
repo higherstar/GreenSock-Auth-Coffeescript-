@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/gruev/pen/yJbQXj.
+This repository is for GreenSock Authentication Module by Coffeescript
 
  
